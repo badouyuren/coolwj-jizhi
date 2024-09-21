@@ -4,6 +4,9 @@ import { ReactP5Wrapper } from 'react-p5-wrapper';
 import { InlineAlert } from 'evergreen-ui';
 import waves from './sketchs/waves';
 import blobs from './sketchs/blobs';
+import bings from './sketchs/bings.js';
+import rains from './sketchs/rains.js';
+
 import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
 import SearchInput from './components/SearchInput';
@@ -225,7 +228,7 @@ class App extends Component {
       isFontLoading,
       colorMode,
     } = this.state;
-    const sketches = { blobs, waves };
+    const sketches = { blobs, waves, bings, rains };
 
     return selected ? (
       <div className="App" tabIndex="-1" onKeyDown={this.handleKeyDown}>

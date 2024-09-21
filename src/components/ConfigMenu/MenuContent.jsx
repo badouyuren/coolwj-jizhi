@@ -55,6 +55,8 @@ const MenuContent = (props) => {
   const bgOptions = [
     { label: 'Waves', value: 'waves' },
     { label: 'Blobs', value: 'blobs' },
+    { label: 'Bings', value: 'bings' },
+    { label: 'Rains', value: 'rains' },
   ];
 
   const engineOptions = [
