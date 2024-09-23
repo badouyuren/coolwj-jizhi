@@ -1,5 +1,5 @@
-import blobsColors from '../constants/colors';
-import { Blob } from './blob';
+import blobsColors from '../../constants/colors';
+import { Blob } from '../entity/Blob';
 
 export default function blobs(p) {
   const blobsArray = [];

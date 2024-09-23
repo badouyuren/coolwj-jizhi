@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
 import { ReactP5Wrapper } from 'react-p5-wrapper';
 import { InlineAlert } from 'evergreen-ui';
-import waves from './sketchs/waves';
-import blobs from './sketchs/blobs';
-import bings from './sketchs/bings.js';
-import rains from './sketchs/rains.js';
+import waves from './sketchs/action/waves';
+import blobs from './sketchs/action/blobs';
+import bings from './sketchs/action/bings.js';
+import rains from './sketchs/action/rains.js';
 
 import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
@@ -50,7 +50,7 @@ class App extends Component {
 
   componentDidMount() {
     const hasZh = navigator.languages.includes('zh');
-    document.title = hasZh ? '新标签页' : 'New Tab';
+    document.title = hasZh ? '遇见诗人' : 'Meet Poet';
 
     load(
       (result) => {

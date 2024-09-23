@@ -1,4 +1,4 @@
-import { Mountain } from './Mountain';
+import { Mountain } from '../entity/Mountain';
 
 export default function waves(p) {
   let mountains = [];
