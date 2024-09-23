@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import JXZhuoKai from '../fonts/JXZhuoKai.woff';
+import JXZhuoKai from '../static/fonts/JXZhuoKai.woff';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
