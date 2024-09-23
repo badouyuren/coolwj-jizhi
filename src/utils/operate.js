@@ -1,7 +1,7 @@
 import domtoimage from 'retina-dom-to-image';
 import axios from 'axios';
 import { sample } from 'lodash';
-import wavesColors from '../constants/wavesColors.json';
+import wavesColors from '../constants/chineseColors.json';
 import storager from './storager';
 
 export const filter = (node) => {

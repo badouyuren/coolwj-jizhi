@@ -13,9 +13,15 @@ import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
 import SearchInput from './components/SearchInput';
 import ColorName from './components/ColorName';
-import { saveBackground, insertFont, fetchAndSetFont, pickColor, isDarkModeEnabled } from './utils';
-import Storager from './utils/storager';
+import {
+  saveBackground,
+  insertFont,
+  fetchAndSetFont,
+  pickColor,
+  isDarkModeEnabled,
+} from './utils/operate';
 import { load } from './utils/jinrishici';
+import Storager from './utils/storager';
 import {
   HORIZONTAL,
   VERTICAL,

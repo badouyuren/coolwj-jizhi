@@ -2,7 +2,7 @@ import React from 'react';
 import { Icon } from 'evergreen-ui';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
-import { pureWords } from '../../utils';
+import { pureWords } from '../../utils/operate';
 
 const Content = styled.div`
   font-size: calc(30px + 1vw);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu } from 'evergreen-ui';
-import { saveBackground } from '../../utils';
+import { saveBackground } from '../../utils/operate';
 
 const SaveBgMenuItem = () => (
   <Menu.Item
