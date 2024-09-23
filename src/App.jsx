@@ -4,8 +4,11 @@ import { ReactP5Wrapper } from 'react-p5-wrapper';
 import { InlineAlert } from 'evergreen-ui';
 import waves from './sketchs/action/waves';
 import blobs from './sketchs/action/blobs';
-import bings from './sketchs/action/bings.js';
-import rains from './sketchs/action/rains.js';
+import bings from './sketchs/action/bings';
+import rains from './sketchs/action/rains';
+import snows from './sketchs/action/snows';
+import suns from './sketchs/action/suns';
+
 
 import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
@@ -25,6 +28,7 @@ import {
 import GlobalStyle from './components/GlobalStyle';
 
 const DEFAULT_SHICI_LIST = require('./constants/shici.json');
+const SKETCHES = { blobs, waves, bings, rains, snows, suns };
 
 class App extends Component {
   constructor(props) {
@@ -51,6 +55,13 @@ class App extends Component {
   componentDidMount() {
     const hasZh = navigator.languages.includes('zh');
     document.title = hasZh ? '遇见诗人' : 'Meet Poet';
+
+    // 自动设置 versesLayout
+    const isVertical = window.innerWidth < 768; // 例如，小于768px时设置为垂直
+
+    this.setState({
+      versesLayout: isVertical ? VERTICAL : HORIZONTAL,
+    });
 
     load(
       (result) => {
@@ -228,7 +239,6 @@ class App extends Component {
       isFontLoading,
       colorMode,
     } = this.state;
-    const sketches = { blobs, waves, bings, rains };
 
     return selected ? (
       <div className="App" tabIndex="-1" onKeyDown={this.handleKeyDown}>
@@ -252,7 +262,7 @@ class App extends Component {
           fontName={fontName}
         />
         <ReactP5Wrapper
-          sketch={sketches[selected]}
+          sketch={SKETCHES[selected]}
           isPlaying={isPlaying}
           isDarkMode={isDarkMode}
           waveColor={waveColor.hex}

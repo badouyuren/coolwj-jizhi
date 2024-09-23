@@ -1,22 +1,25 @@
 import { Mountain } from '../entity/Mountain';
+import { Sun } from '../entity/Sun';
 
 export default function waves(p) {
   let mountains = [];
   let bgColor = '#e6e6e6';
   let isDarkMode = false;
   let waveColor = bgColor;
+  let sun;
 
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
     mountains = [];
     growMountains(p, mountains, waveColor);
-    p.background(bgColor);
-    mountains.forEach((m) => m.display(p));
+    sun = new Sun(p);
   };
 
   p.draw = function () {
     p.background(bgColor);
     mountains.forEach((m) => m.display(p));
+    sun.update(p);
+    sun.display(p);
   };
 
   p.windowResized = function () {

@@ -1,10 +1,12 @@
 import { Mountain } from '../entity/Mountain';
+import { Snow } from '../entity/Snow';
 
-export default function waves(p) {
+export default function snows(p) {
   let mountains = [];
   let bgColor = '#e6e6e6';
   let isDarkMode = false;
   let waveColor = bgColor;
+  let drops = [];
 
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
@@ -17,6 +19,17 @@ export default function waves(p) {
   p.draw = function () {
     p.background(bgColor);
     mountains.forEach((m) => m.display(p));
+
+    // 绘制雨滴
+    for (let i = 0; i < drops.length; i++) {
+      drops[i].fall(p);
+      drops[i].show(p);
+    }
+
+    // 随机添加新的雨滴
+    if (p.random(1) < 0.1) {
+      drops.push(new Snow(p));
+    }
   };
 
   p.windowResized = function () {
