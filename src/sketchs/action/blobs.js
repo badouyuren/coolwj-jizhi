@@ -1,4 +1,4 @@
-import blobsColors from '../../constants/colors';
+import blobsColors from '../../constants/blobsColors';
 import { Blob } from '../entity/Blob';
 
 export default function blobs(p) {

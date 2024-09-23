@@ -62,5 +62,5 @@ const getArchive = (browser) => {
   archive.finalize();
 };
 
-getArchive('chrome');
-getArchive('firefox');
+//getArchive('chrome');
+//getArchive('firefox');
