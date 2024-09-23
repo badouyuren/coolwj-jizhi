@@ -9,7 +9,6 @@ import rains from './sketchs/action/rains';
 import snows from './sketchs/action/snows';
 import suns from './sketchs/action/suns';
 
-
 import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
 import SearchInput from './components/SearchInput';
