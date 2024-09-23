@@ -19,7 +19,7 @@
     "handlebars": "^4.7.6",
     "lodash": "^4.17.21",
     "prop-types": "^15",
-    "react": "^16",
+    "react": "^17",
     "react-dom": "^16",
     "react-hot-loader": "^4",
     "react-p5-wrapper": "^3.2.1",

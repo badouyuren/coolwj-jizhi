@@ -1,3 +1,6 @@
+export const TITLE_CN = '遇见诗人';
+export const TITLE_EN = 'Meet Poet';
+
 export const GOOGLE_SEARCH = 'https://www.google.com/search?q=';
 
 export const DEFAULT_SHICI = {

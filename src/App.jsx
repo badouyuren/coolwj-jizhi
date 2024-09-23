@@ -8,7 +8,6 @@ import bings from './sketchs/action/bings';
 import rains from './sketchs/action/rains';
 import snows from './sketchs/action/snows';
 import suns from './sketchs/action/suns';
-
 import Verses from './components/Verses';
 import ConfigMenu from './components/ConfigMenu';
 import SearchInput from './components/SearchInput';
@@ -29,6 +28,8 @@ import {
   GOOGLE_SEARCH,
   DEFAULT_SHICI,
   DEFAULT_FONT,
+  TITLE_CN,
+  TITLE_EN,
 } from './constants/appConstants';
 import GlobalStyle from './components/GlobalStyle';
 
@@ -59,7 +60,7 @@ class App extends Component {
 
   componentDidMount() {
     const hasZh = navigator.languages.includes('zh');
-    document.title = hasZh ? '遇见诗人' : 'Meet Poet';
+    document.title = hasZh ? TITLE_CN : TITLE_EN;
 
     // 自动设置 versesLayout
     const isVertical = window.innerWidth < 768; // 例如，小于768px时设置为垂直
