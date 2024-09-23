@@ -61,6 +61,13 @@ const MenuContent = (props) => {
     { label: 'Sun', value: 'suns' },
   ];
 
+  const fontOptions = [
+    { label: '江西拙楷', value: 'JXZhuoKai' },
+    { label: '欣意吉祥宋', value: 'JiXiangSong' },
+    { label: '方正细金陵', value: 'FZXiJinLJW' },
+    // { label: '青柳隷书', value: 'QingLiuShuSIMO2-T' },
+  ];
+
   const engineOptions = [
     {
       label: 'Google',
@@ -88,18 +95,7 @@ const MenuContent = (props) => {
     },
   ];
 
-  const fontOptions = [
-    { label: '江西拙楷', value: 'JXZhuoKai' },
-    { label: '欣意吉祥宋', value: 'JiXiangSong' },
-    { label: '方正细金陵', value: 'FZXiJinLJW' },
-  ];
-
   const switchOptions = [
-    // {
-    //   name: '黑夜模式',
-    //   checkedState: darkModeChecked,
-    //   onChangeFunc: onDarkModeChange,
-    // },
     {
       name: '竖版诗词',
       checkedState: verticalVersesChecked,

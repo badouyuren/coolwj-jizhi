@@ -1,16 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 import JXZhuoKai from '../fonts/JXZhuoKai.woff';
-import AaJianHaoTi from '../fonts/AaJianHaoTi-2.ttf';
-
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'JXZhuoKai';
     src: url(${JXZhuoKai}) format('woff');
-  }
-  @font-face {
-      font-family: 'AaJianHaoTi';
-      src: url(${AaJianHaoTi}) format('ttf');
   }
 
   html,

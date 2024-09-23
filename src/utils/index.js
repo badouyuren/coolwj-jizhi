@@ -9,9 +9,7 @@ export const filter = (node) => {
 };
 
 export const isDarkModeEnabled = () => {
-  const result = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-  return result;
+  return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 };
 
 export const saveBackground = () => {
@@ -21,7 +19,7 @@ export const saveBackground = () => {
     .toPng(node, { filter })
     .then((dataUrl) => {
       const link = document.createElement('a');
-      link.download = 'jizhi.png';
+      link.download = 'MeetPoet.png';
       link.href = dataUrl;
       link.click();
     })
@@ -30,14 +28,6 @@ export const saveBackground = () => {
     });
 };
 
-/*
-    filter out Chinese chars:
-    。  \u3002
-    ，  \uff0c
-    、  \u3001
-    ？  \uff1f
-    ！  \uff01
-*/
 export const pureWords = (sentense = '') => {
   const regex = /[\u3002|\uff0c|\u3001|\uff1f|\uff01]/gi;
   return sentense.replace(regex, ' ');
@@ -70,6 +60,5 @@ export const pickColor = (isDarkMode) => {
   const suitableColors = isDarkMode
     ? wavesColors.filter((c) => c.darkSuitable)
     : wavesColors.filter((c) => c.lightSuitable);
-
   return sample(suitableColors);
 };
