@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import { hot } from 'react-hot-loader';
 import { ReactP5Wrapper } from 'react-p5-wrapper';
 import { InlineAlert } from 'evergreen-ui';
@@ -62,8 +63,7 @@ class App extends Component {
     const hasZh = navigator.languages.includes('zh');
     document.title = hasZh ? TITLE_CN : TITLE_EN;
 
-    // 自动设置 versesLayout
-    const isVertical = window.innerWidth < 768; // 例如，小于768px时设置为垂直
+    const isVertical = window.innerWidth < 768;
 
     this.setState({
       versesLayout: isVertical ? VERTICAL : HORIZONTAL,
@@ -248,6 +248,9 @@ class App extends Component {
 
     return selected ? (
       <div className="App" tabIndex="-1" onKeyDown={this.handleKeyDown}>
+        <Helmet>
+          <title>App Title</title>
+        </Helmet>
         <GlobalStyle />
         {selected === WAVES && (
           <ColorName

@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf builds && webpack --mode production && node build.js",
+    "build": "rimraf builds && webpack --mode production ",
     "start": "webpack-dev-server --mode development --open --watch --port=3000",
     "test": "jest",
     "lint": "eslint --cache --format codeframe --ext .mjs,.jsx,.js src",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "archiver": "^3.1.1",
-    "axios": "^0.21.1",
+    "axios": "1.6.0",
     "chalk": "^4.1.2",
     "evergreen-ui": "^4.19.1",
     "handlebars": "^4.7.6",
@@ -21,6 +21,7 @@
     "prop-types": "^15",
     "react": "^17",
     "react-dom": "^16",
+    "react-helmet": "^6.1.0",
     "react-hot-loader": "^4",
     "react-p5-wrapper": "^3.2.1",
     "retina-dom-to-image": "^2.5.6",

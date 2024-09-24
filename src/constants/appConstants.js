@@ -1,8 +1,6 @@
 export const TITLE_CN = '遇见诗人';
 export const TITLE_EN = 'Meet Poet';
 
-export const GOOGLE_SEARCH = 'https://www.google.com/search?q=';
-
 export const DEFAULT_SHICI = {
   content: '红豆生南国，春来发几枝。',
   origin: {
@@ -12,7 +10,6 @@ export const DEFAULT_SHICI = {
 };
 
 export const WAVES = 'waves';
-export const BLOBS = 'blobs';
 export const HORIZONTAL = 'horizontal';
 export const VERTICAL = 'vertical';
 export const DEFAULT_FONT = 'JXZhuoKai';
@@ -50,3 +47,5 @@ export const JIZHI_LINKS = {
     link: 'https://github.com/unicar9/jizhi/issues',
   },
 };
+
+export const GOOGLE_SEARCH = 'https://www.google.com/search?q=';
