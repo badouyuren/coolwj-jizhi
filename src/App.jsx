@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
 import { hot } from 'react-hot-loader';
 import { ReactP5Wrapper } from 'react-p5-wrapper';
 import { InlineAlert } from 'evergreen-ui';
@@ -248,9 +247,6 @@ class App extends Component {
 
     return selected ? (
       <div className="App" tabIndex="-1" onKeyDown={this.handleKeyDown}>
-        <Helmet>
-          <title>App Title</title>
-        </Helmet>
         <GlobalStyle />
         {selected === WAVES && (
           <ColorName
