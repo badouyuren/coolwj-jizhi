@@ -35,7 +35,7 @@ const corsLoad = (callback, errHandler) => {
   return sendRequest(
     newCallBack,
     errHandler,
-    'https://v2.jinrishici.com/one.json?client=npm-sdk/1.0'
+    'https://www.coolwj.com/jizhi/random?client=npm-sdk/1.0'
   );
 };
 
@@ -43,7 +43,7 @@ const commonLoad = (callback, errHandler, token) => {
   return sendRequest(
     callback,
     errHandler,
-    'https://v2.jinrishici.com/one.json?client=npm-sdk/1.0&X-User-Token=' +
+    'https://www.coolwj.com/jizhi/random?client=npm-sdk/1.0&X-User-Token=' +
       encodeURIComponent(token)
   );
 };

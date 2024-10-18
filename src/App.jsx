@@ -28,8 +28,6 @@ import {
   GOOGLE_SEARCH,
   DEFAULT_SHICI,
   DEFAULT_FONT,
-  TITLE_CN,
-  TITLE_EN,
 } from './constants/appConstants';
 import GlobalStyle from './components/GlobalStyle';
 
@@ -59,9 +57,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const hasZh = navigator.languages.includes('zh');
-    document.title = hasZh ? TITLE_CN : TITLE_EN;
-
     const isVertical = window.innerWidth < 768;
 
     this.setState({
