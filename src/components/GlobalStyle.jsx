@@ -1,10 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
-import JXZhuoKai from '../fonts/JXZhuoKai.woff';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
     font-family: 'JXZhuoKai';
-    src: url(${JXZhuoKai}) format('woff');
+    src: url('https://www.coolwj.com/assets/fonts/JXZhuoKai.woff') format('woff');
   }
 
   html,

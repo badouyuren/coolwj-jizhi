@@ -1,6 +1,3 @@
-export const TITLE_CN = '遇见诗人';
-export const TITLE_EN = 'Meet Poet';
-
 export const DEFAULT_SHICI = {
   content: '红豆生南国，春来发几枝。',
   origin: {
@@ -48,4 +45,4 @@ export const JIZHI_LINKS = {
   },
 };
 
-export const GOOGLE_SEARCH = 'https://www.google.com/search?q=';
+export const COOLWJ_POEM = 'https://www.coolwj.com/poem/';

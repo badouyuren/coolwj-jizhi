@@ -70,13 +70,8 @@ const MenuContent = (props) => {
 
   const engineOptions = [
     {
-      label: 'Google',
-      value: 'https://www.google.com/search?q=',
-    },
-    { label: 'Baidu', value: 'https://www.baidu.com/s?wd=' },
-    {
-      label: 'Bing',
-      value: 'https://www.bing.com/search?q=',
+      label: 'Coolwj',
+      value: 'https://www.coolwj.com/poem/',
     },
   ];
 

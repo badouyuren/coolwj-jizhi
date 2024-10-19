@@ -59,18 +59,23 @@ const VersesContent = (props) => {
   const {
     verses: {
       content,
+      coolwjId,
       origin: { author, title },
     },
     engineOption,
     isVertical,
   } = props;
 
-  const searchLink = `${engineOption}${author} ${title}`;
+  const searchLink = `${engineOption}${coolwjId}`;
   const filteredContent = isVertical ? pureWords(content) : content;
 
   return (
     <>
-      <Content isVertical={isVertical}>{filteredContent}</Content>
+      <Content isVertical={isVertical}>
+        <a href={searchLink} target="_blank" rel="noopener noreferrer">
+          {filteredContent}
+        </a>
+      </Content>
       <Origin isVertical={isVertical}>
         <a href={searchLink} target="_blank" rel="noopener noreferrer">
           <span className="title">{`「${title}」`}</span>
