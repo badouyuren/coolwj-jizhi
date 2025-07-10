@@ -3,7 +3,7 @@ export default function bings(p) {
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
     let img_url = 'https://api.bimg.cc/random?uhd=true';
-    img_url = 'https://www.coolwj.com/static/peter-vanosdall-uZVtAixV8c8.jpg';
+    img_url = 'https://www.coolwj.com/assets/_carousel/peter-vanosdall-uZVtAixV8c8.jpg';
     bgImage = p.loadImage(img_url, () => {
       console.log('Background image loaded');
     });
